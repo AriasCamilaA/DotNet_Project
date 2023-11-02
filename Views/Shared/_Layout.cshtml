@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+@*         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DotNet_Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -28,6 +28,22 @@
                     </ul>
                 </div>
             </div>
+        </nav> *@
+        <nav class="landingMenu">
+            <div class="landingMenu__links">
+                <img class="logo" src="assets/img/logoClaro.png" alt="logo De Castilla">
+                <ul>
+                    <li><a href="#banner">Inicio</a></li>
+                    <li><a href="#quienes_somos">Quienes somos</a></li>
+                    <li><a href="#especialidades">Menú</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contactanos">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="landingMenu__btns">
+                <a href="./views/usuarios/login.html" class="btn">Iniciar Sesión</a>
+                <a href="./views/usuarios/register.html" class="btn">Registrarse</a>
+            </div>
         </nav>
     </header>
     <div >
@@ -37,8 +53,8 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - DotNet_Project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container text-light">
+            &copy; 2023 - DotNet_Project - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-light">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
