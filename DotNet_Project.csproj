@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Assets\css\landing.css" />
+    <None Include="wwwroot\Assets\css\style.css" />
+  </ItemGroup>
+
 </Project>
