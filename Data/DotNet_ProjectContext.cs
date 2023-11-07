@@ -15,5 +15,7 @@ namespace DotNet_Project.Data
         }
 
         public DbSet<DotNet_Project.Models.Usuario> Usuario { get; set; } = default!;
+
+        public DbSet<DotNet_Project.Models.Calificacion> Calificacion { get; set; } = default!;
     }
 }

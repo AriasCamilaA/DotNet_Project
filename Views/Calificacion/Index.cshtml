@@ -1,0 +1,54 @@
+﻿@model IEnumerable<DotNet_Project.Models.Calificacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/Assets/css/botones.css">
+
+<h1>Calificaciones</h1>
+
+<button class="btn">
+    <a asp-action="Create">Nueva Calificacion</a>
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EstrellasCalificacíon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComentarioCalificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpresaProveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoProveedor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstrellasCalificacíon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComentarioCalificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpresaProveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoProveedor)
+            </td>
+            <td>
+                <button class="btn"> <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> </button>
+                <button class="btn"> <a asp-action="Details" asp-route-id="@item.Id">Details</a> </button> |
+                <button class="btn"> <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> </button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
