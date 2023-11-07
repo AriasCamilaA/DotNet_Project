@@ -8,7 +8,6 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     z-index: 10;
     width: 100%;
 }
@@ -172,7 +171,7 @@ footer .map{
 .mapCatilla{
     border-radius: 16px;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 footer h2{
